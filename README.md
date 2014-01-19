@@ -7,6 +7,8 @@ to report any enhancements or issues you encounter.
 
 ## Dependencies
 
+You will need a x86/x64 CPU. You will need to install gcc and objdump too. 
+
 The assembly bot requires two libraries, which are included in this project. 
 
 The first library is created by [Taylor Hornby](https://defuse.ca). He created the assembly library that does the heavy work.
@@ -17,7 +19,7 @@ Go here for more information on [tmhOAuth](https://github.com/themattharris/tmhO
 
 ## Usage
 
-Using this bot should be easy. You just have to put your Twitter api keys in plzasm.php and type php plzasm.php in 
+Using this bot should be easy. You just have to put your Twitter api keys in plzasm.php and type `php plzasm.php` in 
 a command line.
 
 1. Put Twitter api keys in plzasm.php.
@@ -27,11 +29,11 @@ a command line.
 We included an optional [Debian service file](https://github.com/redragonx/plzasm/blob/master/plzasm) so you can use the assembly bot as a daemon. 
 
 1. Create a simple user/group named plzasm. The user does not need a home dir or default bash access.
-2. To create a user group, do <groupadd plzasm> as root.
-3. To create the user with the group you just made, do <useradd -g plzasm plzasm>
+2. To create a user group, do `groupadd plzasm` as root.
+3. To create the user with the group you just made, do `useradd -g plzasm plzasm`
 2. You place the service file in /etc/init.d/ with the root user. 
-2. Run the following command as root <update-rc.d plzasm defaults>. This will start the bot on system reboots too.
-3. Run the bot with this command <service plzasm start>.
+2. Run the following command as root `update-rc.d plzasm defaults`. This will start the bot on system reboots too.
+3. Run the bot with this command `service plzasm start`
 
 ## Change History
 
