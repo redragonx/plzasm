@@ -13,7 +13,7 @@ The assembly bot requires two libraries, which are included in this project.
 
 The first library is created by [Taylor Hornby](https://defuse.ca). He created the assembly library that does the heavy work.
 
-The second library is tmhOAuth. This lets us access the Twitter api. The library requires php5-curl and curl. Please install those with your package manager. 
+The second library is tmhOAuth. This lets us access the Twitter api. The library requires php5-curl and curl. Please install these with your package manager. 
 
 Go here for more information on [tmhOAuth](https://github.com/themattharris/tmhOAuth).
 
@@ -24,7 +24,7 @@ a command line.
 
 1. Put Twitter api keys in plzasm.php.
 2. Create the log file plzasm.log in /var/log/ 
-3. php plzasm.php as root so it can access the log file. (Read on if you don't want to run as root.)
+3. `php plzasm.php` as root so it can access the log file. (Read on if you don't want to run as root.)
 
 We included an optional [Debian service file](https://github.com/redragonx/plzasm/blob/master/plzasm) so you can use the assembly bot as a daemon. 
 
