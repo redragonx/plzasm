@@ -23,7 +23,7 @@ Using this bot should be easy. You just have to put your Twitter api keys in plz
 a command line.
 
 1. Put Twitter api keys in plzasm.php.
-2. Create the log file plzasm.log in /var/log/ 
+2. Create the log file plzasm.log in /var/log/ hint: do (`chown plzasm:plzasm /var/log/plzasm.log` once you created the user and group.)
 3. `php plzasm.php` as root so it can access the log file. (Read on if you don't want to run as root.)
 
 We included an optional [Debian service file](https://github.com/redragonx/plzasm/blob/master/plzasm) so you can use the assembly bot as a daemon. 
@@ -31,6 +31,7 @@ We included an optional [Debian service file](https://github.com/redragonx/plzas
 1. Create a simple user/group named plzasm. The user does not need a home dir or default bash access.
 2. To create a user group, do `groupadd plzasm` as root.
 3. To create the user with the group you just made, do `useradd -g plzasm plzasm`
+4. Run `chown plzasm:plzasm /var/log/plzasm.log` once you created the user and group.
 2. You place the service file in /etc/init.d/ with the root user. 
 2. Run the following command as root `update-rc.d plzasm defaults`. This will start the bot on system reboots too.
 3. Run the bot with this command `service plzasm start`
