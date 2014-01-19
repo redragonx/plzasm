@@ -1,4 +1,6 @@
-<!-- 
+<?php
+
+/* 
 * An assembly library written in PHP. It assembles Intel x86 or x64 instructions
 * in hex text or other formats
 * 
@@ -19,8 +21,7 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 * 
 * You can contact the author at <https://defuse.ca/> 
-* -->
-<?php
+*/
 
 class InvalidModeException extends Exception {}
 class UnsafeCodeException extends Exception {}
