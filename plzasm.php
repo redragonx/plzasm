@@ -1,4 +1,6 @@
-<!-- 
+<?php
+
+/* 
 * Twitter assembly bot that assembles user code and gives the assembled code via
 * Twitter.
 *
@@ -18,9 +20,9 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 * 
 * You can contact the authors at <https://dicesoft.net/> or <https://defuse.ca/> 
-* -->
+* 
+*/
 
-<?php
 require_once('libs/tmhOAuth/tmhOAuth.php');
 require_once('libs/assemblyLib.php');
 
